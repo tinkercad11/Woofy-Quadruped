@@ -5,6 +5,7 @@ It is designed to have only 1DOF per leb, making it very easy to create new gait
 ## Materials 
 ### For robot : 
 MG90(Recommended)/SG90 servo  x 4
+
 ESP8266 NodeMcu Board  x 1
 PCA9685 servo control board  x 1
 1.3 inch oled display  x 1
