@@ -8,10 +8,20 @@ MG90(Recommended)/SG90 servo  x 4
 ESP8266 NodeMcu Board  x 1
 PCA9685 servo control board  x 1
 1.3 inch oled display  x 1
+Toggle Switch  x 1
 Miscellaneous(Perfboard, headers, jumper wires)
 ### For Battery Pack : 
 18650 cells  x 2
 Suitable buck Converter  x 1
 Cell holder  x 1
 
-##
+## Hardware 
+The MG90 servos provide decent amout of torque while being within budget. The PCA9685 Expansion board is used for future scalability, making it easy to add or remove more servos. The oled displays expressions in the form of eyes. All the different expressions are already stored in the sketch, so making you own modifications is easy. The ESP8266 board allows remote control thorugh both Wifi and bluetooth protocols. 
+
+## Software 
+The code(.ino) provided Consists of 5 different gaits(forward, backward, left, right, and hi) and 7 other postiions, using a switch case logic(Again designed to make it easy to add more positions/gaits). All the gaits, and expressions are included inside the same file. The ESP8266 is made a Wifi server to whihc the application connects as a client. This give a reliable connection using the Wifi protocol. It also contains a blink function which gives the robot the ability to blink at a random interval of time. 
+
+## App
+The App used for controlling the robot is created using the MIT App Inventor. The code is included. The app needs an Android phone, in which you need to connect to the wifi access point created by the ESP8266 board. Again it is designed to make sure is is easy to add more commands. 
+
+
